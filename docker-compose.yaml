@@ -21,6 +21,11 @@ services:
       - "8000:80"
     volumes:
       - ./laravel:/var/www
+    entrypoint: dockerize -template /etc/nginx/conf.d/nginx.conf:/etc/nginx/conf.d/nginx.conf nginx -g 'daemon off;'
+    environment:
+      - APP_HOST=app
+      - APP_PORT=9000
+
     networks:
       - app-network
     depends_on:
