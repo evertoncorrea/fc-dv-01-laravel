@@ -31,7 +31,3 @@ steps:
         "-c",
         "/var/www/phpunit.xml",
       ]
-
-images:
-  - "gcr.io/$PROJECT_ID/app:latest"
-  - "gcr.io/$PROJECT_ID/nginx:latest"
