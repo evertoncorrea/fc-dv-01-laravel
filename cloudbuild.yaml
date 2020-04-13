@@ -33,4 +33,5 @@ steps:
       ]
 
 images:
-  - "gcr.io/$PROJECT_ID/app-laravel:latest"
+  - "gcr.io/$PROJECT_ID/app:latest"
+  - "gcr.io/$PROJECT_ID/nginx:latest"
