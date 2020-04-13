@@ -31,3 +31,6 @@ steps:
         "-c",
         "/var/www/phpunit.xml",
       ]
+
+images:
+  - "gcr.io/$PROJECT_ID/app-laravel:latest"
